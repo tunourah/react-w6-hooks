@@ -17,21 +17,29 @@ const CharacterPage = () => {
   }
 
   return (
-    <div className="container mx-auto p-4">
-      <div className="flex flex-col items-center">
-        <img
-          src={character.image}
-          alt={character.name}
-          className="w-64 h-64 rounded-full mb-4"
-        />
-        <h2 className="text-2xl font-bold mb-2">{character.name}</h2>
-        <p><strong>Hair Color:</strong> {character.hair}</p>
-        <p><strong>Status:</strong> {character.status}</p>
-        <p><strong>species:</strong> {character.species}</p>
-        <p><strong>Gender:</strong> {character.gender}</p>
-        <p><strong>Planet:</strong> {character.origin}</p>
+    <div className="container mx-auto mt-12 p-4 bg-gray-100 shadow-lg rounded-lg">
+    <div className="flex flex-col items-center bg-white p-6 rounded-lg shadow-md">
+      <img
+        src={character.image}
+        alt={character.name}
+        className="w-64 h-64 rounded-full mb-6 border-4 border-gray-300 shadow-lg"
+      />
+      <h2 className="text-3xl font-bold text-gray-800 mb-4">{character.name}</h2>
+  
+      <div className="text-lg space-y-2">
+        <p className="text-gray-600"><strong>Hair Color:</strong> {character.hair}</p>
+        <p className="text-gray-600"><strong>Status:</strong> {character.status}</p>
+        <p className="text-gray-600"><strong>Species:</strong> {character.species}</p>
+        <p className="text-gray-600"><strong>Gender:</strong> {character.gender}</p>
+        <p className="text-gray-600"><strong>Planet:</strong> {character.origin}</p>
       </div>
+  
+      <button className="mt-6 px-6 py-2 bg-blue-500 text-white rounded-md shadow-md hover:bg-blue-600 transition duration-300">
+        More Info
+      </button>
     </div>
+  </div>
+  
   );
 };
 
