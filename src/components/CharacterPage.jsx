@@ -34,9 +34,7 @@ const CharacterPage = () => {
         <p className="text-gray-600"><strong>Planet:</strong> {character.origin}</p>
       </div>
   
-      <button className="mt-6 px-6 py-2 bg-blue-500 text-white rounded-md shadow-md hover:bg-blue-600 transition duration-300">
-        More Info
-      </button>
+    
     </div>
   </div>
   
